@@ -32,9 +32,11 @@ const BottomRow = () => {
 
       <div className="trackerButtons">
           <button className="homeButtons__touchdown" onClick = {() => setDown(down + 1) }>Adv. Down</button>
-          <button className="homeButtons__touchdown" onClick = {() => setDown(down * 0) }>Reset Downs</button>
+          <button className="homeButtons__touchdown" onClick = {() => setDown(1) }>Reset Downs</button>
           <button className="homeButtons__touchdown" onClick = {() => setDown(down - 1) }>Repeat Down</button>
-          <button className="homeButtons__touchdown" onClick = {() => setToGo(toGo) }>Yards Gained</button>
+          <button className="homeButtons__touchdown" onClick = {() => setToGo(toGo - 5) }>Yards Gained</button>
+          <button className="homeButtons__touchdown" onClick = {() => setToGo(10) }>First Down</button>
+          <button className="homeButtons__touchdown" onClick = {() => setBallOn(ballOn + 5) }>Yards Gained</button>
           <button className="homeButtons__fieldGoal" onClick = {() => setQtr(qtr + 1)}>Next Quater</button>
         </div>
     </div>
