@@ -79,6 +79,12 @@
   height: 20rem;
 }
 
+.trackerButtons {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
 .down,
 .toGo,
 .ballOn,
